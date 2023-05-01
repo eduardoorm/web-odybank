@@ -35,7 +35,7 @@ export class SeccionComponent
  
   setearImg(variable: number)
   {
-    this.urlVideoLink = this.urlVideos[variable];
+    this.urlVideoLink = this.urlVideos[variable-1];
     this.imagePath = 'assets/imgs/sesion01/session01_0'+ variable+'.png';
   }
   
