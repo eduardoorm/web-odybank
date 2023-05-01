@@ -10,7 +10,14 @@ import { ActivatedRoute } from '@angular/router';
 export class SeccionComponent 
 {
   imagePath: string | undefined;
+  urlVideos: string[] = [
+    "https://odybankody-my.sharepoint.com/:v:/g/personal/jormenom_odybank_com_pe/EbkoQETVpMxHuRimNn5xE_wB0qmQZyRU_gMjSvqpX5Lolw?email=eestebanq%40odybank.com.pe",
+    "https://odybankody-my.sharepoint.com/:v:/g/personal/jormenom_odybank_com_pe/ERocPUniEmhHj92y3naoRxwBhQscILQqsTat6Go5Tz2jkA?email=eestebanq%40odybank.com.pe",
+    "google.com",
+    "google.com"
+  ]
 
+  urlVideoLink : string | undefined;
   constructor(private route: ActivatedRoute) { 
     const coach = this.route.snapshot.paramMap.get('coach');
     //this.setearImg(coach);
@@ -28,6 +35,7 @@ export class SeccionComponent
  
   setearImg(variable: number)
   {
+    this.urlVideoLink = this.urlVideos[variable];
     this.imagePath = 'assets/imgs/sesion01/session01_0'+ variable+'.png';
   }
   

@@ -8,9 +8,5 @@ import {Router, Routes, RouterModule} from "@angular/router";
 })
 export class AppComponent {
   title = 'projectOdy-app';
-  constructor(private router: Router) {}
-  irPaginaSession(n : Number)
-  {
-    this.router.navigate(['/seccion/'+n ])
-  }
+  
 }
