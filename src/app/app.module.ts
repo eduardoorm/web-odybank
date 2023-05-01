@@ -8,16 +8,17 @@ import { FooterComponent } from './component/footer/footer.component';
 import { CardComponent } from './component/card/card.component';
 import { HomeComponent } from './page/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ComponentModule } from './component/component.module';
+import { PageModule } from './page/page.module';
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    FooterComponent,
-    CardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ComponentModule,
+    PageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
