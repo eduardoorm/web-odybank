@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class CardComponent {
   @Input() titulo:string;
   @Input() category:string;
+  @Input() image:string;
 }

@@ -8,7 +8,9 @@ import {Router, Routes, RouterModule} from "@angular/router";
 })
 export class HomeComponent
  {
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+
+  }
   irPaginaSession(n : Number)
   {
     this.router.navigate(['/seccion/'+n ])
