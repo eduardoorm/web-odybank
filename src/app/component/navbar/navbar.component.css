@@ -1,0 +1,11 @@
+.navbar{
+  font-family: monospace;
+  background-color:  #222222;
+}
+
+.nav-link{
+  color:white;
+}
+.container-fluid{
+  padding-left: 2em;
+}

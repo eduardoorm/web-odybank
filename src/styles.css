@@ -20,12 +20,15 @@
 
 html{
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: monospace;
   font-size: 14px;
 }
 
 body{
   height: 100%;
+  font-family: monospace;
+  background-color:  #222222;
+  color:white;
 }
 
 .hero-section{
